@@ -1,62 +1,108 @@
-# 🚀 Digital Agency Landing Page
+# Ethio Thrift  
 
-A fully responsive **multi-page website template** built with **vanilla HTML, CSS, and JavaScript**.
-This project replicates a modern digital agency landing page
-
----
-
-## 📂 Features
-
-* ✅ **Responsive layout** – Works on mobile, tablet, and desktop
-* ✅ **Gradient navigation & hero sections** – Modern blended color scheme
-* ✅ **Smooth testimonial carousel** – Auto-sliding client feedback
-* ✅ **Pure Vanilla Stack** – No frameworks, no dependencies
+A modern, responsive secondhand clothing e-commerce website.  
+Built with **HTML, CSS, and JavaScript** for learning and demonstration purposes.  
 
 ---
 
-## 📁 Project Structure
+## 📌 Live Demo  
+👉 [View Live Site](https://your-live-demo-link.com)  
+*(Replace with your actual deployed link — e.g., GitHub Pages, Netlify, or Vercel)*  
+
+---
+
+## 📂 File Structure  
 
 ```
-/project
-  ├── index.html        # Landing page
-  ├── css/
-  │     └── style.css   # Main stylesheet
-  ├── js/
-  │     └── main.js     # Carousel & lightbox logic
-  └── images/           # Placeholder images
+EthioThrift/
+│── index.html          # Homepage
+│── products.html       # Product catalog
+│── about.html          # About the brand & founder
+│── contact.html        # Contact form + map
+│
+├── css/
+│   └── styles.css      # Main stylesheet
+│
+├── js/
+│   └── scripts.js      # Interactivity and validation
+│
+└── assets/
+    └── images/         # Logo + product images
 ```
 
 ---
 
-## 🛠️ Getting Started
+## ✨ Features  
 
-### 1. Clone the repo
+### 🏠 Homepage (`index.html`)  
+- Hero banner with brand tagline.  
+- Featured & On-Sale products sections.  
+- Newsletter signup form.  
 
-```bash
-git clone https://github.com/your-username/modern-agency-landing.git
-cd modern-agency-landing
-```
+### 🛍 Products (`products.html`)  
+- Product grid with images, names, and ETB prices.  
+- “View” button opens a **modal** to enlarge product images.  
+- Automatic price formatting in **Ethiopian Birr (ETB)**.  
 
-### 2. Open in browser
+### 👩 About (`about.html`)  
+- Founder’s story (Selam Yohannes).  
+- Ethio Thrift’s mission and values: sustainability, affordability, community.  
 
-Simply open `index.html` in your browser to preview the site.
-*(No build tools required – it’s pure HTML/CSS/JS.)*
+### 📞 Contact (`contact.html`)  
+- Contact form with:  
+  - Name, Email, Phone, Message.  
+  - **Form validation** (email format + phone number check).  
+- Embedded **Google Maps** showing Addis Ababa location.  
+
+### 🎨 Styling (`css/styles.css`)  
+- Responsive grid-based layout.  
+- Sticky navigation bar.  
+- Accent color: golden brown (`#b8860b`).  
+- Smooth hover animations.  
+- Blinking “Sale” badge.  
+- Modal styling for enlarged product images.  
+
+### ⚡ Interactivity (`js/scripts.js`)  
+- Price formatting in ETB currency.  
+- Product image **modal** with close button & ESC support.  
+- Contact form **validation** with alerts.  
+- Glow effect on **CTA buttons**.  
+- Navigation hover highlight.  
+- Dynamic year auto-update in footer.  
 
 ---
 
-## 🎨 Customization
-
-* Update colors in `css/style.css` (look for `--primary` and `--secondary` variables).
-* Replace images in `/images/` with your own.
-* Edit text content directly inside the `.html` files.
----
-
-## 🌐 Live Demo
-
-(You can add a GitHub Pages link here once deployed.)
+## 💪 Technologies Used  
+- **HTML5** – structure  
+- **CSS3** – responsive design, animations  
+- **JavaScript (Vanilla)** – interactivity & form validation  
 
 ---
 
-## 📜 License
+## 🚀 Getting Started  
 
-This project is licensed under the MIT License – feel free to use, modify, and share.
+1. Clone or download the repository:  
+   ```bash
+   git clone https://github.com/yourusername/ethio-thrift.git
+   ```
+2. Open `index.html` in your browser.  
+
+*(No server setup required — this is a static website.)*  
+
+---
+
+## 🖼 Screenshots  
+
+> *(Optional: Add screenshots of your pages here. Place them in `assets/images/` and link them below)*  
+
+Example:  
+
+![Homepage Screenshot](assets/images/screenshot-home.png)  
+
+---
+
+## 📜 License  
+This project is for **educational purposes** only.  
+Data & inspiration from local Ethiopian thrift fashion culture.  
+
+---
