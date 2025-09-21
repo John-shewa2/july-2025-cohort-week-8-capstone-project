@@ -6,8 +6,8 @@ Built with **HTML, CSS, and JavaScript** for learning and demonstration purposes
 ---
 
 ## 📌 Live Demo  
-👉 [View Live Site](https://your-live-demo-link.com)  
-*(Replace with your actual deployed link — e.g., GitHub Pages, Netlify, or Vercel)*  
+👉 [View Live Site](https://john-shewa2.github.io/july-2025-cohort-week-8-capstone-project/)  
+
 
 ---
 
@@ -83,26 +83,16 @@ EthioThrift/
 
 1. Clone or download the repository:  
    ```bash
-   git clone https://github.com/yourusername/ethio-thrift.git
+   git clone https://github.com/John-shewa2/july-2025-cohort-week-8-capstone-project.git
    ```
-2. Open `index.html` in your browser.  
+2. Open `index.html` in your browser.
+3. Add images of new products in the assets/images folder  
 
 *(No server setup required — this is a static website.)*  
 
 ---
 
-## 🖼 Screenshots  
-
-> *(Optional: Add screenshots of your pages here. Place them in `assets/images/` and link them below)*  
-
-Example:  
-
-![Homepage Screenshot](assets/images/screenshot-home.png)  
-
----
-
 ## 📜 License  
-This project is for **educational purposes** only.  
-Data & inspiration from local Ethiopian thrift fashion culture.  
+This project is for **educational purposes** only.   
 
 ---
