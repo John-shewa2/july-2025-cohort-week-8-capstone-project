@@ -1,142 +1,119 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Digital Agency Website</title>
-  <link rel="stylesheet" href="css/style.css"/>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Etno Thrift — Home</title>
+<link rel="stylesheet" href="css/styles.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <!-- Header -->
-  <header>
-    <nav>
-      <div class="logo">Digital Agency</div>
-      <div id="menu-toggle">&#9776;</div>
-      <ul class="nav-links" id="nav-links">
-        <li><a href="#hero">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#testimonials">Testimonials</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <!-- Hero -->
-  <section class="hero" id="hero">
-    <div class="hero-content fade-in">
-      <h1>Welcome! We Are Creative Agency</h1>
-      <p>Crafting digital experiences that inspire and engage.</p>
-      <button class="btn">Get Started</button>
-    </div>
-  </section>
-
-  <!-- About -->
-  <section id="about" class="about fade-in">
-    <div class="container">
-      <h2>About Us</h2>
-      <p>
-        We are a passionate team of designers, developers, and strategists 
-        focused on building brands that stand out. Our mission is to transform 
-        ideas into stunning digital experiences.
-      </p>
-      <h2>Who We Are</h2>
-        <p>We are a forward-thinking company passionate about design, development, and delivering impactful digital solutions.</p>
-        <h2>Our Mission</h2>
-        <p>Our mission is to help businesses thrive with cutting-edge technology and innovative ideas.</p>
-    </div>
-  </section>
-
-  <!-- Services -->
-  <section id="services" class="services" style="background: var(--accent);">
-    <div class="container">
-      <h2 class="fade-in">Our Services</h2>
-      <div class="service-grid">
-        <div class="service slide-left">
-          <h3>Web Design</h3>
-          <p>Modern, responsive websites tailored to your brand and audience.</p>
-        </div>
-        <div class="service fade-in">
-          <h3>Branding</h3>
-          <p>Identity design that captures your vision and resonates with people.</p>
-        </div>
-        <div class="service slide-right">
-          <h3>Digital Marketing</h3>
-          <p>Data-driven campaigns that grow your business and increase reach.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Portfolio -->
-  <section id="portfolio" class="portfolio fade-in">
-    <div class="container">
-      <h2>Our Work</h2>
-      <div class="portfolio-grid">
-        <img src="https://picsum.photos/400/300?random=2" alt="Portfolio 1"/>
-        <img src="https://picsum.photos/400/300?random=3" alt="Portfolio 2"/>
-        <img src="https://picsum.photos/400/300?random=4" alt="Portfolio 3"/>
-        <img src="https://picsum.photos/400/300?random=5" alt="Portfolio 4"/>
-        <img src="https://picsum.photos/400/300?random=6" alt="Portfolio 5"/>
-        <img src="https://picsum.photos/400/300?random=7" alt="Portfolio 6"/>
-      </div>
-    </div>
-  </section>
-
-  <!-- Testimonials -->
-<section id="testimonials" class="testimonials fade-in">
-  <div class="container">
-    <h2>What Clients Say</h2>
-    <div class="testimonial-wrapper">
-      <div class="testimonial-track" id="testimonial-track">
-        <div class="testimonial">
-          <blockquote>
-            “This agency completely transformed our online presence. 
-            Professional, creative, and results-driven!”
-            <cite>- Tom Doe., Startup Founder</cite>
-          </blockquote>
-        </div>
-        <div class="testimonial">
-          <blockquote>
-            “Their design skills and attention to detail are unmatched. 
-            We saw immediate improvements in engagement.”
-            <cite>- John Doe., Marketing Director</cite>
-          </blockquote>
-        </div>
-        <div class="testimonial">
-          <blockquote>
-            “A fantastic partner who understands both design and strategy. 
-            They truly care about client success.”
-            <cite>- Jane Doe., CEO</cite>
-          </blockquote>
-        </div>
-      </div>
-    </div>
-  </div>
+  <header class="site-header">
+<div class="container">
+<a href="index.html" class="logo">
+  <img src="assets/images/Logo.png" alt="Ethio Thrift Logo" class="logo-img">
+  <span class="logo-text">Ethio Thrift</span>
+</a>
+<button class="nav-toggle" aria-label="Open menu">☰</button>
+<nav class="main-nav" aria-label="Main navigation">
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="products.html">Products</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+</div>
+</header>
+<main>
+<section class="hero">
+<div class="container hero-inner">
+<h1>Find beautiful secondhand treasures</h1>
+<p>Affordable, sustainable, and full of stories.</p>
+<div class="cta">
+<a href="products.html" class="btn">Shop Now</a>
+<a href="about.html" class="btn btn-outline">Our Story</a>
+</div>
+</div>
 </section>
 
 
-  <!-- Contact -->
-  <section id="contact" class="contact fade-in">
-    <div class="container">
-      <h2>Get In Touch</h2>
-      <form id="contact-form">
-        <input type="text" placeholder="Your Name" required/>
-        <input type="email" placeholder="Your Email" required/>
-        <textarea placeholder="Your Message" rows="5" required></textarea>
-        <button type="submit" class="btn">Send Message</button>
-      </form>
-    </div>
-  </section>
+<section class="featured container">
+<h2>Featured items</h2>
+<div class="grid products-grid">
+<!-- product cards (image, title, price, button) -->
+<article class="product-card">
+<img src="assets/images/denimjacketman.jpeg" alt="Vintage jacket">
+<h3>Vintage Denim Jacket (men)</h3>
+<p class="price">1500</p>
+<button class="btn view-product">View</button>
+</article>
 
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2025. Digital Agency. All rights reserved. Made by Instructor Eddy.</p>
-  </footer>  
-  <script defer src="js/main.js"></script>
+<article class="product-card">
+<img src="assets/images/dress1.jpg" alt="stylish dress">
+<h3>stylish dress</h3>
+<p class="price">2500</p>
+<button class="btn view-product">View</button>
+</article>
+
+<article class="product-card">
+<img src="assets/images/Nikemen.png" alt="Nike men shoe">
+<h3>Nike Shoe (men)</h3>
+<p class="price">8500</p>
+<button class="btn view-product">View</button>
+</article>
+
+<article class="product-card">
+<img src="assets/images/casualshoewomen.png" alt="casual shoe">
+<h3>casual shoe (women)</h3>
+<p class="price">1500</p>
+<button class="btn view-product">View</button>
+</article>
+<!-- duplicate cards as needed -->
+</div>
+</section>
+
+<section class="on-sale container">
+  <h2>🔥 On Sale</h2>
+  <div class="grid products-grid">
+    <!-- Sale product 1 -->
+    <article class="product-card">
+      <img src="assets/images/formalshoewomen.png" alt="women formal shoe">
+      <h3>Formal shoe (women)</h3>
+      <p class="old-price">Br 2,500</p>
+      <p class="price">Br 1,800</p>
+      <span class="onsale">On Sale!</span>
+      <button class="btn view-product">View</button>
+    </article>
+
+    <!-- Sale product 2 -->
+    <article class="product-card">
+      <img src="assets/images/Nikemen.png" alt="Nike shoe">
+      <h3>Nike shoe (men)</h3>
+      <p class="old-price">Br 9,000</p>
+      <p class="price">Br 8,000</p>
+      <span class="onsale">On Sale!</span>
+      <button class="btn view-product">View</button>
+    </article>
+   </div>
+</section>
+
+
+<section class="newsletter container">
+<h2>Stay in the loop</h2>
+<form id="newsletter-form">
+<input type="email" name="email" placeholder="Enter your email" required>
+<button class="btn" type="submit">Subscribe</button>
+</form>
+</section>
+</main>
+
+<footer class="site-footer">
+<div class="container">
+<p>© <span id="year"></span> Ethio Thrift — Secondhand treasures with care.</p>
+</div>
+</footer>
+
+<script src="js/scripts.js" defer></script>
 </body>
 </html>
-
-
-

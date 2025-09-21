@@ -1,0 +1,80 @@
+/* Simple reset */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html,body { height: 100%; }
+body { font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; line-height: 1.5; color: #222; }
+
+:root{ --container: 1100px; --accent: #b8860b; --muted: #666; }
+
+.container{ max-width: var(--container); margin: 0 auto; padding: 1rem; }
+
+/* Header */
+.site-header{ background: #fff; border-bottom: 1px solid #eee; position: sticky; top: 0; z-index: 50; }
+.site-header .container{ display:flex; align-items:center; justify-content:space-between; gap:1rem; }
+.logo{ display: flex; align-items: center; gap: 0.3rem; font-weight: 1000; text-decoration: none; color: var(--accent); font-size: 2.25rem; }
+.logo-img{ height: 100px; width: auto; display: block; object-fit: cover; border-radius: 8px; }
+.main-nav ul{ list-style:none; display:flex; gap:1rem; }
+.main-nav a{ text-decoration:none; color:inherit; padding:.5rem; }
+.nav-toggle{ display:none; font-size:1.25rem; background:none; border:none; }
+
+/* Hero */
+.hero{ background: linear-gradient(180deg, rgba(0,0,0,0.15), rgba(0,0,0,0.05)), url(../assets/images/Brand.png) center/cover no-repeat; color:#fff; padding:4rem 0; }
+.hero-inner{ text-align:left; max-width:700px; }
+.hero h1{ font-size:2.25rem; margin-bottom:.5rem; }
+.hero p{ margin-bottom:1rem; }
+.btn{ display:inline-block; background:var(--accent); color:#fff; padding:.6rem 1rem; border-radius:8px; text-decoration:none; border:none; cursor:pointer; }
+.btn-outline{ background:transparent; border:1px solid rgba(255,255,255,0.6); }
+
+/* Grids */
+.grid{ display:grid; gap:1rem; }
+.products-grid{ grid-template-columns: repeat(auto-fit, minmax(200px,1fr)); }
+
+/* Product cards - Featured & On Sale */
+.product-card, .sale-item { background:whitesmoke; border-radius:10px; padding:.75rem; box-shadow:0 2px 6px rgba(0,0,0,0.04); text-align:center; display:flex; flex-direction:column; align-items:center; position:relative; }
+.product-card img, .sale-item img { width:100%; height:auto; object-fit:cover; border-radius:8px; margin-bottom:.5rem; }
+
+/* Price styling */
+.price { color:var(--accent); font-weight:600; margin:.2rem 0 1rem; display:block; line-height:1.2; }
+.old-price { text-decoration:line-through; color:gray; display:block; margin-bottom:.2rem; }
+
+/* On Sale badge */
+.onsale { position:absolute; top:10px; left:10px; display:inline-block; background:#d62828; color:#fff; font-weight:bold; padding:.2rem .5rem; border-radius:4px; animation:blink 1s infinite; font-size:.8rem; z-index:2; }
+
+/* Forms */
+input, textarea{ width:100%; padding:.6rem; border:1px solid #ddd; border-radius:6px; }
+label{ display:block; margin-bottom:.5rem; color:var(--muted); }
+
+/* Footer */
+.site-footer{ border-top:1px solid #eee; padding:1rem 0; margin-top:2rem; text-align:center; color:var(--muted); }
+
+/* Responsive */
+@media (max-width: 800px){
+.main-nav{ display:none; }
+.nav-toggle{ display:block; }
+.hero h1{ font-size:1.6rem; }
+}
+
+/* Utility */
+.hidden{ display:none !important; }
+
+/* Blinking animation */
+@keyframes blink { 0%,50%,100% { opacity:1; } 25%,75% { opacity:0; } }
+
+
+
+/* About Page Specific Styles */
+.about-hero { text-align:center; padding:4rem 1rem; background:#fdf6e4; border-radius:8px; margin-bottom:2rem; } 
+.about-hero h1 { font-size:2rem; color:var(--accent); margin-bottom:.5rem; } 
+.about-hero p { font-size:1.1rem; color:var(--muted); line-height:1.6; }
+
+.about-founder h2 { color:var(--accent); text-align:center; margin-bottom:1.5rem; font-size:1.8rem; } 
+.founder-profile { display:flex; flex-wrap:wrap; gap:2rem; align-items:flex-start; justify-content:center; } 
+.founder-img { width:250px; height:400px; object-fit:cover; border-radius:8px; border:3px solid var(--accent); } 
+.founder-bio { max-width:650px; text-align:justify; height:400px; overflow:auto; } 
+.founder-bio h3 { font-size:1.5rem; color:var(--accent); margin-bottom:.5rem; } 
+.founder-bio p { color:#333; line-height:1.6; white-space:pre-line; }
+
+.about-story h2 { color:var(--accent); text-align:center; margin-top:2rem; margin-bottom:1rem; font-size:1.8rem; } 
+.about-story p { line-height:1.6; margin-bottom:1rem; color:#333; text-align:center; } 
+.about-story ul { list-style:disc; padding-left:2rem; max-width:650px; margin:0 auto; color:#333; line-height:1.6; }
+
+@media (max-width:900px) { .founder-profile { flex-direction:column; text-align:center; } .founder-bio { text-align:center; height:auto; } .founder-img { height:auto; } }
